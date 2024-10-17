@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --header-bg: #fff;
+}
+/* ========================================Common============================================ */
+.container {
+  width: 1140px;
+  /* Cách mỗi bên lề 24px */
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+a {
+  /* được sử dụng để loại bỏ các hiệu ứng trang trí của văn bản. Khi áp dụng thuộc tính này, 
+  các trang trí mặc định như gạch chân, gạch ngang, hoặc gạch chân kép trên văn bản sẽ bị loại bỏ. */
+  text-decoration: none;
+}
+
+/* ========================================Header============================================ */
+.header {
+  /* background: var(--header-bg); */
+  background: blanchedalmond;
+  min-height: 100vh;
+  padding: 30px;
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  background: var(--header-bg);
+  align-items: center;
+}
+
+.navbar__list {
+  display: flex;
+}
+
+.header__action--login,
+.navbar__link {
+  padding: 8px 21px;
+  color: #000;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  /* 28px - 175% */
+  line-height: 1.75;
+}
