@@ -11,10 +11,17 @@ body {
 }
 :root {
   --header-bg: #fff;
+  --font-color: #000;
 }
 /* ========================================Common============================================ */
 .container {
-  width: 1140px;
+  width: 1440px;
+  /* Cách mỗi bên lề 24px */
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+.container2 {
+  width: 1236px;
   /* Cách mỗi bên lề 24px */
   max-width: calc(100% - 48px);
   margin: 0 auto;
@@ -29,27 +36,55 @@ a {
 .header {
   /* background: var(--header-bg); */
   background: blanchedalmond;
-  min-height: 100vh;
   padding: 30px;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.btn {
+  display: inline-block;
+  min-width: 118px;
+  padding: 0 16px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 999px;
+  color: #ffb100;
+  background: #006493;
+  cursor: pointer;
+}
+.btn:hover {
+  color: #006493;
+  background: #ffb100;
+  border: 2px solid #006493;
+}
+.header-logo {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin-left: 68px;
+}
+.header-logo .logo {
+  width: 38px;
+  height: 34px;
+  object-fit: cover;
 }
 .header-top {
   display: flex;
   justify-content: space-between;
   background: var(--header-bg);
+  height: 100px;
   align-items: center;
 }
 
 .navbar__list {
   display: flex;
 }
-
-.header__action--login,
 .navbar__link {
   padding: 8px 21px;
-  color: #000;
-  font-size: 1.6rem;
   font-style: normal;
-  font-weight: 300;
   /* 28px - 175% */
   line-height: 1.75;
+  color: var(--font-color);
+}
+.header__action--login {
+  margin-right: 68px;
 }
