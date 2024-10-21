@@ -52,19 +52,26 @@
         </div>
       </div>
     </header>
-    <main class="main">
+    <main class="container">
       <div class="container2">
         <div class="hero">
           <!-- left -->
-          <div class="hero-img">
-            <img src="./assets/Image/Background.svg" alt="background" />
+          <div class="hero__left--img">
+            <img
+              src="./assets/Image/Background.svg"
+              class="hero__left--img"
+              alt="background"
+            />
           </div>
+          <div class="hero__center--line"></div>
           <!-- right -->
           <div class="hero-right">
             <div class="hero-login">
-              <div class="hero-title">
-                <h2 class="heading-login">LOGIN</h2>
-                <p class="note">Truy cập bằng tài khoản được cung cấp</p>
+              <div class="hero__title">
+                <h2 class="hero__tile--heading">LOGIN</h2>
+                <p class="hero__tile--note">
+                  Truy cập bằng tài khoản được cung cấp
+                </p>
               </div>
               <div class="hero__write--lg">
                 <div class="hero__write--user">
@@ -72,8 +79,8 @@
                   <input type="text" />
                 </div>
                 <div class="hero__write--password">
-                  <p class="username">Mật khẩu</p>
-                  <input type="text" />
+                  <p class="password">Mật khẩu</p>
+                  <input type="password" />
                 </div>
               </div>
               <!-- cta action -->
@@ -81,9 +88,11 @@
                 <a href="" class="btn header__action--login">Đăng nhập</a>
               </div>
             </div>
-            <div class="hero__media--img">
-              <img src="./assets/Image/Line.svg" alt="line" />
-            </div>
+            <img
+              src="./assets/Image/Line.svg"
+              class="hero__media--line"
+              alt="line"
+            />
           </div>
         </div>
       </div>

@@ -34,11 +34,14 @@ a {
 
 /* ========================================Header============================================ */
 .header {
-  /* background: var(--header-bg); */
-  background: blanchedalmond;
+  background: var(--header-bg);
+  /* background: blanchedalmond; */
   padding: 30px;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 600;
+  z-index: 1;
+  position: sticky;
+  top: -28px;
 }
 .btn {
   display: inline-block;
@@ -91,28 +94,81 @@ a {
 /* ========================================Hero============================================ */
 .hero {
   display: flex;
+  justify-content: space-between;
   width: 1060px;
   height: 703px;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
+  border: 1px solid var(--font-color);
+  margin: 0 auto;
+  position: relative;
 }
-.hero-img {
+.hero__left--img {
   width: 530px;
+  height: 701px;
   object-fit: cover;
 }
+.hero__center--line {
+  width: 1px; /* Độ rộng của đường thẳng */
+  height: 100%; /* Chiều cao theo khối cha */
+  background-color: var(--font-color); /* Màu của đường thẳng */
+}
 .hero-right {
-  border: 1px solid #000;
+  /* border: 1px solid var(--font-color); */
+  width: 530px;
+  height: 702px;
 }
 .hero-login {
-  margin-top: 140px;
-  margin-left: 102px;
-  margin-right: 82px;
-  height: 702 px;
+  margin: 140px 82px 0 102px;
+  height: 702px;
   width: 337px;
-  border: 1px solid var(--font-color);
+  /* border: 1px solid var(--font-color); */
   display: flex;
   flex-direction: column; /* Sắp xếp các phần tử theo cột */
-  align-items: center; /* Căn giữa theo chiều ngang */
-  justify-content: center; /* Căn giữa theo chiều dọc */
   height: 150px; /* Chiều cao của khung chứa, có thể điều chỉnh */
+  background: #fff;
+}
+.hero__title {
+  line-height: 1.6;
+}
+.hero__tile--heading {
+  font-weight: 700;
+  color: #006493;
+  font-size: 3.2rem;
+}
+.username {
+  margin-top: 20px;
+  font-weight: 500;
+}
+.hero__write--user input {
+  font-size: 1.8rem;
+  width: 343px;
+  height: 37px;
+  margin-top: 10px;
+  border-radius: 2px;
+  border: 1px solid var(--font-color);
+}
+
+.password {
+  margin-top: 20px;
+  font-weight: 500;
+}
+.hero__write--password input {
+  font-size: 1.8rem;
+  width: 343px;
+  height: 37px;
+  margin-top: 10px;
+  border-radius: 2px;
+  border: 1px solid var(--font-color);
+}
+
+.hero__login--btn {
+  padding-top: 20px;
+}
+.hero__media--line {
+  object-fit: cover;
+  width: 527px;
+  position: absolute;
+  bottom: -10px; /* Căn sát mép dưới của khối cha */
+  box-sizing: border-box;
 }
