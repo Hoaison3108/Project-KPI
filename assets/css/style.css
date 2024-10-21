@@ -25,6 +25,7 @@ body {
   /* Cách mỗi bên lề 24px */
   max-width: calc(100% - 48px);
   margin: 0 auto;
+  padding-top: 8px;
 }
 a {
   /* được sử dụng để loại bỏ các hiệu ứng trang trí của văn bản. Khi áp dụng thuộc tính này, 
@@ -36,12 +37,16 @@ a {
 .header {
   background: var(--header-bg);
   /* background: blanchedalmond; */
-  padding: 30px;
+  padding: 10px;
   font-size: 1.8rem;
   font-weight: 600;
   z-index: 1;
   position: sticky;
   top: -28px;
+}
+.company {
+  font-size: 3.2rem;
+  color: #006493;
 }
 .btn {
   display: inline-block;
@@ -80,6 +85,12 @@ a {
 
 .navbar__list {
   display: flex;
+}
+.navbar__item {
+  margin-right: 57px;
+}
+.navbar__item:hover {
+  text-shadow: 0.5px 0 0 currentColor;
 }
 .navbar__link {
   padding: 8px 21px;
@@ -141,7 +152,7 @@ a {
   font-weight: 500;
 }
 .hero__write--user input {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   width: 343px;
   height: 37px;
   margin-top: 10px;
@@ -154,16 +165,16 @@ a {
   font-weight: 500;
 }
 .hero__write--password input {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   width: 343px;
   height: 37px;
   margin-top: 10px;
   border-radius: 2px;
   border: 1px solid var(--font-color);
 }
-
 .hero__login--btn {
   padding-top: 20px;
+  font-weight: 500;
 }
 .hero__media--line {
   object-fit: cover;
@@ -171,4 +182,24 @@ a {
   position: absolute;
   bottom: -10px; /* Căn sát mép dưới của khối cha */
   box-sizing: border-box;
+}
+/* ========================================footer============================================ */
+.footer {
+  padding-top: 20px;
+}
+.footer__des {
+  display: flex;
+  height: 51px;
+  background: #006493;
+  color: #fff;
+  align-items: center;
+}
+.address__des {
+  margin-left: 88px;
+}
+.tel__des {
+  margin-left: 55px;
+}
+.email__des {
+  margin-left: 55px;
 }
