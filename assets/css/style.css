@@ -88,3 +88,31 @@ a {
 .header__action--login {
   margin-right: 68px;
 }
+/* ========================================Hero============================================ */
+.hero {
+  display: flex;
+  width: 1060px;
+  height: 703px;
+  justify-content: center;
+  align-items: center;
+}
+.hero-img {
+  width: 530px;
+  object-fit: cover;
+}
+.hero-right {
+  border: 1px solid #000;
+}
+.hero-login {
+  margin-top: 140px;
+  margin-left: 102px;
+  margin-right: 82px;
+  height: 702 px;
+  width: 337px;
+  border: 1px solid var(--font-color);
+  display: flex;
+  flex-direction: column; /* Sắp xếp các phần tử theo cột */
+  align-items: center; /* Căn giữa theo chiều ngang */
+  justify-content: center; /* Căn giữa theo chiều dọc */
+  height: 150px; /* Chiều cao của khung chứa, có thể điều chỉnh */
+}
