@@ -33,6 +33,23 @@ a {
   các trang trí mặc định như gạch chân, gạch ngang, hoặc gạch chân kép trên văn bản sẽ bị loại bỏ. */
   text-decoration: none;
 }
+.table-info,
+.table-kpi {
+  width: 100%;
+  max-width: calc(100% - 48px);
+}
+.table--btn {
+  min-width: 110px;
+  height: 30px;
+  text-align: center;
+  border-radius: 999px;
+  background: #86c232;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.6rem;
+  border: 1px solid currentColor;
+}
 /* =========================================================================================================index=================================================================================================== */
 /* ========================================Header============================================ */
 .header {
@@ -227,3 +244,74 @@ a {
 
 /* =========================================================================================================kpi_cbcc=================================================================================================== */
 /* ==================================================table============================================================================ */
+.table-info td {
+  /* border: 1px solid var(--font-color); */
+  border-collapse: collapse;
+  height: auto;
+  line-height: 2.5;
+}
+.header__title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2rem;
+  padding: 21px 0px 5px;
+}
+.header__time {
+  text-align: center;
+  font-size: 1.6rem;
+  font-style: italic;
+  padding: 10px 0px 21px;
+}
+
+.info-bold {
+  font-weight: 600;
+}
+.info--input {
+  width: 100%;
+  height: 30px;
+  font-weight: 600;
+  font-size: 1.7rem;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #86c232;
+}
+.info__btn--search:hover {
+  color: #86c232;
+  background: #ffed00;
+}
+.info-center {
+  text-align: center;
+}
+.info__thang--droplist {
+  width: 40%;
+  height: 30px;
+  font-weight: 600;
+  font-size: 1.7rem;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #86c232;
+}
+/* =======================================================table-kpi================================================================= */
+.table-kpi {
+  margin-top: 50px;
+}
+.table-kpi th,
+.table__body td,
+.table__footer td {
+  border: 1px solid var(--font-color);
+}
+.table-kpi th {
+  font-weight: 600;
+  line-height: 1.8;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.table-kpi tr td:first-child {
+  text-align: center;
+}
+
+.row-title1 {
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.7;
+}

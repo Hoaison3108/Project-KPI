@@ -57,7 +57,306 @@
       </div>
     </header>
     <main class="container">
-      <div class="table"></div>
+      <!-- table header  -->
+      <table class="table-info">
+        <thead class="header-info">
+          <tr class="header">
+            <h1 class="header__title">
+              PHIẾU ĐÁNH GIÁ NĂNG LỰC CÁN BỘ TRUNG CẤP
+            </h1>
+            <p class="header__time">(Tháng .... năm 2024)</p>
+          </tr>
+        </thead>
+        <tbody class="body-info">
+          <tr class="info-1">
+            <td class="info-bold">1. Họ tên nhân sự được đánh giá:</td>
+            <td>
+              <input
+                type="text"
+                class="info--input"
+                placeholder="Nhập tên nhân sự"
+              />
+            </td>
+            <td class="info-center">
+              <button class="info__btn--search table--btn">Search</button>
+            </td>
+            <td class="info-ma info-bold">Mã nhân viên:</td>
+            <td class="info-manv">KSRĐ.008</td>
+          </tr>
+          <tr class="info-2">
+            <td class="info-bold">2. Đơn vị công tác:</td>
+            <td class="info-center">Phòng Kế toán - Vật tư</td>
+            <td></td>
+            <td>
+              <label for="crops" class="info-bold"> Tháng</label>
+              <select id="crops" name="crops" class="info__thang--droplist">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+            </td>
+          </tr>
+          <tr class="info-3">
+            <td class="info-bold">3. Chức vụ/ công việc làm:</td>
+            <td class="info-center">Kế toán trưởng</td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- table kpi -->
+      <table class="table-kpi">
+        <!-- table header -->
+        <thead class="table__head">
+          <tr class="row-head">
+            <th>Stt</th>
+            <th>Tiêu chí đánh giá</th>
+            <th>Nội dung chi tiết</th>
+            <th>Mức điểm tối đa</th>
+            <th>Cán bộ trung cấp đánh giá(*)</th>
+            <th>Lãnh đạo Công ty đánh giá(*)</th>
+            <th>Ghi chú</th>
+          </tr>
+        </thead>
+        <!-- table body -->
+        <tbody class="table__body">
+          <tr class="row-title1">
+            <td>I</td>
+            <td>TÍNH LÀM GƯƠNG</td>
+            <td>#</td>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+            <td>#</td>
+          </tr>
+          <tr class="row-1">
+            <td>1</td>
+            <td>TC1</td>
+            <td>ND1</td>
+            <td>5</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+          </tr>
+          <tr class="row-2">
+            <td>2</td>
+            <td>TC2</td>
+            <td>ND2</td>
+            <td>5</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+          </tr>
+          <tr class="row-title2">
+            <td>II</td>
+            <td>CÔNG TÁC QUẢN LÝ, ĐIỀU HÀNH ĐƠN VỊ</td>
+            <td>#</td>
+            <td>30</td>
+            <td>30</td>
+            <td>30</td>
+            <td>#</td>
+          </tr>
+          <tr class="row-3">
+            <td>1</td>
+            <td>TC3</td>
+            <td>ND3</td>
+            <td>10</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+          </tr>
+          <tr class="row-4">
+            <td>2</td>
+            <td>TC4</td>
+            <td>ND4</td>
+            <td>5</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+          </tr>
+          <tr class="row-5">
+            <td>3</td>
+            <td>TC5</td>
+            <td>ND5</td>
+            <td>5</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+          </tr>
+          <tr class="row-6">
+            <td>4</td>
+            <td>TC6</td>
+            <td>ND6</td>
+            <td>5</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+          </tr>
+          <tr class="row-7">
+            <td>5</td>
+            <td>TC7</td>
+            <td>ND7</td>
+            <td>5</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+          </tr>
+          <tr class="row-title3">
+            <td>III</td>
+            <td>CÔNG TÁC ĐÀO TẠO NHÂN SỰ</td>
+            <td>#</td>
+            <td>20</td>
+            <td>20</td>
+            <td>20</td>
+            <td>#</td>
+          </tr>
+          <tr class="row-8">
+            <td>1</td>
+            <td>TC8</td>
+            <td>ND8</td>
+            <td>5</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+          </tr>
+          <tr class="row-9">
+            <td>2</td>
+            <td>TC9</td>
+            <td>ND9</td>
+            <td>5</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+          </tr>
+          <tr class="row-10">
+            <td>3</td>
+            <td>TC10</td>
+            <td>ND10</td>
+            <td>5</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+          </tr>
+          <tr class="row-11">
+            <td>4</td>
+            <td>TC11</td>
+            <td>ND11</td>
+            <td>5</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+          </tr>
+          <tr class="row-title4">
+            <td>IV</td>
+            <td>CHUYÊN MÔN VÀ THỰC HIỆN CÔNG VIỆC</td>
+            <td>#</td>
+            <td>30</td>
+            <td>30</td>
+            <td>30</td>
+            <td>#</td>
+          </tr>
+          <tr class="row-12">
+            <td>1</td>
+            <td>TC12</td>
+            <td>ND12</td>
+            <td>5</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+          </tr>
+          <tr class="row-13">
+            <td>2</td>
+            <td>TC13</td>
+            <td>ND13</td>
+            <td>5</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+          </tr>
+          <tr class="row-14">
+            <td>3</td>
+            <td>TC14</td>
+            <td>ND14</td>
+            <td>5</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+          </tr>
+          <tr class="row-title5">
+            <td>V</td>
+            <td>KHẢ NĂNG SÁNG TẠO/ĐỔI MỚI</td>
+            <td>#</td>
+            <td>5</td>
+            <td>5</td>
+            <td>5</td>
+            <td>#</td>
+          </tr>
+          <tr class="row-15">
+            <td>1</td>
+            <td>TC15</td>
+            <td>ND15</td>
+            <td>2</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+          </tr>
+          <tr class="row-16">
+            <td>2</td>
+            <td>TC16</td>
+            <td>ND16</td>
+            <td>3</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+          </tr>
+          <tr class="row-title6">
+            <td>VI</td>
+            <td>TÍNH TRUNG THỰC VÀ BẢO MẬT</td>
+            <td>#</td>
+            <td>5</td>
+            <td>5</td>
+            <td>5</td>
+            <td>#</td>
+          </tr>
+          <tr class="row-17">
+            <td>1</td>
+            <td>TC17</td>
+            <td>ND17</td>
+            <td>3</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+          </tr>
+          <tr class="row-18">
+            <td>2</td>
+            <td>TC18</td>
+            <td>ND18</td>
+            <td>2</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+          </tr>
+        </tbody>
+        <!-- table footer -->
+        <tfoot class="table__footer">
+          <tr class="foot-1">
+            <td>#</td>
+            <td>TỔNG CỘNG</td>
+            <td>#</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>#</td>
+          </tr>
+        </tfoot>
+      </table>
     </main>
     <footer class="container2">
       <div class="footer">
