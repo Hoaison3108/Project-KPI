@@ -324,6 +324,11 @@ a {
 }
 .row-center {
   text-align: center;
+  vertical-align: middle;
+}
+.table-result {
+  line-height: 1.8;
+  font-size: 1.6rem;
 }
 .result-title {
   display: inline-block;
